@@ -4,6 +4,10 @@ public class Main
 {
   void do_stuff(String a, String b)
   {
+    int x=Integer.parseInt(a);
+    int y=Integer.parseInt(b);
+    int z=new Calc().div(x,y);
+    System.out.println(""+z);
   }
 
   public static void main(String[] args)
