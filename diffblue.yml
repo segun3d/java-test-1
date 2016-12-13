@@ -1,6 +1,8 @@
 branch: master
 language: java
 buildCmd: cd main-module; mvn compile
+testCmd: cd main-module; mvn cobertura:cobertura; cobertura-report --datafile target/cobertura/cobertura.ser --format xml --destination ./
+reportFile: main-module/coverage.xml
 timeout: 3600
 memout: 8000000000
 units:
