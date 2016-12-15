@@ -5,6 +5,7 @@ testCmd: cd main-module; mvn cobertura:cobertura; cobertura-report --datafile ta
 reportFile: main-module/coverage.xml
 timeout: 3600
 memout: 8000000000
+cbmcArguments: --java-max-input-array-length 9
 units:
   - target:
       - sourceDir: main-module/src/main/java
