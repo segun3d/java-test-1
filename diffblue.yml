@@ -6,43 +6,6 @@ reportFile: main-module/coverage.xml
 timeout: 3600
 memout: 8000000000
 cbmcArguments: --java-max-input-array-length 9
-units:
-  - target:
-      - sourceDir: main-module/src/main/java
-        file: com/diffblue/java_test/Additions.class
-        dir: main-module/target/classes
-    libs: []
-    context: []
-  - target:
-      - sourceDir: main-module/src/main/java
-        file: com/diffblue/java_test/Main.class
-        dir: main-module/target/classes
-    libs: []
-    context: []
-  - target:
-      - sourceDir: main-module/src/main/java
-        file: com/diffblue/java_test/Calc.class
-        dir: main-module/target/classes
-    libs: []
-    context: []
-  - target:
-      - sourceDir: main-module/src/main/java
-        file: com/diffblue/java_test/other_stuff/Bla.class
-        dir: main-module/target/classes
-    libs: []
-    context: []
-  - target:
-      - sourceDir: main-module/src/main/java
-        file: com/diffblue/java_test/some_stuff/A.class
-        dir: main-module/target/classes
-    libs: []
-    context: []
-  - target:
-      - sourceDir: main-module/src/main/java
-        file: com/diffblue/java_test/some_stuff/B.class
-        dir: main-module/target/classes
-    libs: []
-    context: []
 tool:
   language: java
   cbmcArguments: >-
@@ -50,41 +13,3 @@ tool:
     --assertions-as-assumptions --unwind 9 --java-max-input-array-length 9
   timeout: 300
   memout: 1000000000
-  units:
-    - target:
-        - sourceDir: main-module/src/main/java
-          file: com/diffblue/java_test/Additions.class
-          dir: main-module/target/classes
-      libs: []
-      context: []
-    - target:
-        - sourcedir: main-module/src/main/java
-          file: com/diffblue/java_test/Main.class
-          dir: main-module/target/classes
-      libs: []
-      context: []
-    - target:
-        - sourcedir: main-module/src/main/java
-          file: com/diffblue/java_test/Calc.class
-          dir: main-module/target/classes
-      libs: []
-      context: []
-    - target:
-        - sourcedir: main-module/src/main/java
-          file: com/diffblue/java_test/other_stuff/Bla.class
-          dir: main-module/target/classes
-      libs: []
-      context: []
-    - target:
-        - sourcedir: main-module/src/main/java
-          file: com/diffblue/java_test/some_stuff/A.class
-          dir: main-module/target/classes
-      libs: []
-      context: []
-    - target:
-        - sourcedir: main-module/src/main/java
-          file: com/diffblue/java_test/some_stuff/B.class
-          dir: main-module/target/classes
-      libs: []
-      context: []
-
