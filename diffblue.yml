@@ -1,8 +1,7 @@
 branch: master
 language: java
 buildCmd: cd main-module; mvn compile
-testCmd: cd main-module; mvn cobertura:cobertura; cobertura-report --datafile target/cobertura/cobertura.ser --format xml --destination ./
-reportFile: main-module/coverage.xml
+testCmd: cd main-module; mvn test
 timeout: 3600
 memout: 8000000000
 cbmcArguments: --java-max-input-array-length 9
