@@ -21,10 +21,8 @@ public class AdditionsTest {
   @org.junit.Test
   public void com_diffblue_java_test_Additions_checkTicTacToePosition_100504ff5d66aea9_002() throws Exception {
     /* initialize test parameters */
-    com.diffblue.java_test.Additions tmp_object_factory$26 = (com.diffblue.java_test.Additions) Reflector
-        .forceInstance("com.diffblue.java_test.Additions");
-    byte[] dynamic_2_array = new byte[] { (byte) 0, (byte) 1, (byte) 2, (byte) 0, (byte) 1, (byte) 2, (byte) 0,
-        (byte) 1, (byte) 0 };
+    Additions tmp_object_factory$26 = (Additions) Reflector.forceInstance("com.diffblue.java_test.Additions");
+    byte[] dynamic_2_array = { 0, 1, 2, 0, 1, 2, 0, 1, 0 };
     byte[] dynamic_object1 = dynamic_2_array;
     byte[] a = dynamic_object1;
 
@@ -45,10 +43,8 @@ public class AdditionsTest {
   @org.junit.Test
   public void com_diffblue_java_test_Additions_checkTicTacToePosition_100504ff5d66aea9_009() throws Exception {
     /* initialize test parameters */
-    com.diffblue.java_test.Additions tmp_object_factory$26 = (com.diffblue.java_test.Additions) Reflector
-        .forceInstance("com.diffblue.java_test.Additions");
-    byte[] dynamic_2_array = new byte[] { (byte) 0, (byte) 2, (byte) 0, (byte) 0, (byte) 1, (byte) 1, (byte) 1,
-        (byte) 1, (byte) 0 };
+    Additions tmp_object_factory$26 = (Additions) Reflector.forceInstance("com.diffblue.java_test.Additions");
+    byte[] dynamic_2_array = { 0, 2, 0, 0, 1, 1, 1, 1, 0 };
     byte[] dynamic_object1 = dynamic_2_array;
     byte[] a = dynamic_object1;
 
