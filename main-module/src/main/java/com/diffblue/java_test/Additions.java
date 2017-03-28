@@ -39,17 +39,11 @@ public class Additions
     //Check if a row and column is winning
     for (byte i=0; i<3; i++) {
       if (a[i] == a[3+i] && a[i] == a[6+i]) {
-        if(a[i] == 1)
-          return 1;
-        else if (a[i] == 2)
-          return 2;
+        return a[i];
       }
 
       if (a[3*i] == a[3*i + 1] && a[3*i] == a[3*i + 2]) {
-        if(a[3*i] == 1)
-          return 1;
-        else if (a[3*i] == 2)
-          return 2;
+        return a[i];
       }
     }
 
