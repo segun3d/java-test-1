@@ -43,24 +43,18 @@ public class Additions
       }
 
       if (a[3*i] == a[3*i + 1] && a[3*i] == a[3*i + 2]) {
-        return a[i];
+        return a[3*i];
       }
     }
 
     //Check if the top-left bottom-right diagonal is winning
     if (a[0] == a[4] && a[0] == a[8]) {
-      if(a[0] == 1)
-        return 1;
-      else if (a[0] == 2)
-        return 2;
+      return a[0];
     }
 
     //Check if the top-right bottom-left diagonal is winning
     if (a[2] == a[4] && a[2] == a[6]) {
-      if(a[2] == 1)
-        return 1;
-      else if (a[2] == 2)
-        return 2;
+      return a[2];
     }
 
     //nobody won yet
