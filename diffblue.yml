@@ -2,3 +2,5 @@ buildCmd: cd main-module; mvn compile
 testCmd: cd main-module; mvn test
 cbmcArguments:
   java-max-input-array-length: 9
+  java-disable-mocks: false
+  java-mock-class: 'java.*'
