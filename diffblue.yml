@@ -1,4 +1,11 @@
 buildCmd: cd main-module; mvn compile
 testCmd: cd main-module; mvn test
+units: 
+  - context: []
+    libs: []
+    target:
+      - dir: main-module/target/classes
+        file: com/diffblue/java_test/Additions.class
+        sourceDir: main-module/src/main/java
 cbmcArguments:
   java-max-input-array-length: 9
