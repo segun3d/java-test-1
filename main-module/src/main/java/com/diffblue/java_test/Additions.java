@@ -73,41 +73,6 @@ public class Additions
     return 0;
   }
 
-  public String checkTicTacToePosition(char[] a, char[] b, char[] c) {
-    if (a.length != 3 || b.length != 3 || c.length != 3) {
-      return "Error: Lines not equal length";
-    }
-    byte[] bytes = new byte[9];
-    for (int i=0; i<9; i++) {
-    	bytes[i] = ticTacToeCharToByte(i<3 ? a[i]: i<6 ? b[i-3] : c[i-6]);
-    }
-    switch (checkTicTacToePosition(bytes)) {
-		case 1:
-			return "X wins";
-		case 2:
-			return "O wins";
-		default:
-			return "No winner";
-    }
-  }
-
-  static byte ticTacToeCharToByte(char c) {
-    switch (c) {
-      case 'X':
-      case 'x':
-        return 1;
-      case 'O':
-      case 'o':
-      case '0':
-        return 2;
-      case ' ':
-        return 0;
-      default:
-        throw new Error("Character " + c + " not regognized");
-    }
-  }
-
-
   /*
    * checks if an array contains a sequence
    * [... '<','h','t','m','l' ...]
