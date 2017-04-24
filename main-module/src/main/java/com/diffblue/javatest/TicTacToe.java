@@ -78,4 +78,23 @@ public class TicTacToe {
     // Neither player has won yet
     return 0;
   }
+
+  /**
+   * Convert char representaion of board state to byte representation.
+   */
+  static byte ticTacToeCharToByte(char c) {
+    switch (c) {
+      case 'X':
+      case 'x':
+        return 1;
+      case 'O':
+      case 'o':
+      case '0':
+        return 2;
+      case ' ':
+        return 0;
+      default:
+        throw new Error("Character " + c + " not recognized");
+    }
+  }
 }
