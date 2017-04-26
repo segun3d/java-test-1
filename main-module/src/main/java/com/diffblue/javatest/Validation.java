@@ -5,6 +5,7 @@ public class Validation {
    * Checks if an array contains a sequence
    * [... '<','h','t','m','l' ...]
    */
+  @SuppressWarnings("checkstyle:fallthrough")
   public boolean containsUnsafeSequence(char[] ca) {
     int state = 0;
     for (int i = 0; i < ca.length; i++) {
