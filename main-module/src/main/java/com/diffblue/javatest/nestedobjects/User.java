@@ -8,6 +8,9 @@ public class User {
     this.order = order;
   }
 
+  /**
+   * Checks if an item costs the same as the user's order item.
+   */
   public boolean checkItemCost(Item item) {
     if (!order.hasItem()) {
       return false;
