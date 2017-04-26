@@ -1,4 +1,4 @@
-package com.diffblue.java_test.some_stuff;
+package com.diffblue.javatest.somestuff;
 
 public class A {
   public B b;
@@ -10,6 +10,7 @@ public class A {
       return true;
     }
   }
+
   public boolean setB(B b) {
     boolean exists = hasB();
     this.b = b;

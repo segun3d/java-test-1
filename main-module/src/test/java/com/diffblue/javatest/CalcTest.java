@@ -1,4 +1,4 @@
-package com.diffblue.java_test;
+package com.diffblue.javatest;
 
 import org.junit.Assert;
 import org.junit.Test;

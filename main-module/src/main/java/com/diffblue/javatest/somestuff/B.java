@@ -1,4 +1,4 @@
-package com.diffblue.java_test.some_stuff;
+package com.diffblue.javatest.somestuff;
 
 public class B {
   public int x;

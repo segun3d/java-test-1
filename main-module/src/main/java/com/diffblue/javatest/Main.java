@@ -1,4 +1,4 @@
-package com.diffblue.java_test;
+package com.diffblue.javatest;
 
 public class Main {
   void do_stuff(String a, String b) {

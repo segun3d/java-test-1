@@ -1,4 +1,4 @@
-package com.diffblue.java_test;
+package com.diffblue.javatest;
 
 public class Search {
   public boolean search(int [] array, int target) {
