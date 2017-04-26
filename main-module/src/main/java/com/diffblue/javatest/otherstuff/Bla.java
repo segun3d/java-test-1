@@ -1,11 +1,14 @@
 package com.diffblue.javatest.otherstuff;
 
+import com.diffblue.javatest.somestuff.A;
+import com.diffblue.javatest.somestuff.B;
+
 public class Bla {
-  public Bla(com.diffblue.javatest.somestuff.A a)  {
+  public Bla(A a)  {
     this.m = a;
   }
 
-  public boolean check(com.diffblue.javatest.somestuff.B b) {
+  public boolean check(B b) {
     if (!m.hasB()) {
       return false;
     }
@@ -15,5 +18,5 @@ public class Bla {
     return false;
   }
 
-  private com.diffblue.javatest.somestuff.A m;
+  private A m;
 }
