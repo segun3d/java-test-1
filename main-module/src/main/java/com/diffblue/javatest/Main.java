@@ -1,22 +1,23 @@
 package com.diffblue.javatest;
 
 public class Main {
-  void do_stuff(String a, String b) {
-    int x = Integer.parseInt(a);
-    int y = Integer.parseInt(b);
-    if (y != 0) {
-      int z = new Calc().div(x, y);
-      System.out.println("" + z);
+  void divide(String string1, String string2) {
+    int number1 = Integer.parseInt(string1);
+    int number2 = Integer.parseInt(string2);
+    if (number2 != 0) {
+      int result = new Calc().div(number1, number2);
+      System.out.println("" + result);
     } else {
-      System.out.println("second argument must not be zero");
+      System.out.println("Second argument must not be zero");
     }
   }
 
   public static void main(String[] args) {
     if (args.length < 2) {
-      System.out.println("need two arguments");
+      System.out.println("Two arguments required");
       return;
     }
-    new Main().do_stuff(args[0], args[1]);
+
+    new Main().divide(args[0], args[1]);
   }
 }
