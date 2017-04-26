@@ -1,16 +1,17 @@
 package com.diffblue.java_test.other_stuff;
 
-public class Bla
-{
+public class Bla {
   public Bla(com.diffblue.java_test.some_stuff.A a)  {
-    this.m=a;
-  } 
+    this.m = a;
+  }
 
   public boolean check(com.diffblue.java_test.some_stuff.B b) {
-    if(!m.hasB())
+    if (!m.hasB()) {
       return false;
-    if(m.b.x==b.x)
+    }
+    if (m.b.x == b.x) {
       return true;
+    }
     return false;
   }
 
