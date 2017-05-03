@@ -78,4 +78,59 @@ public class TicTacToe {
     // Neither player has won yet
     return 0;
   }
+
+  /**
+   * Checks if either player has won a tic-tac-toe game.
+   * Inputs a, b, c are rows on the board, each is an array of 3 chars
+   *   'x', 'X''     : player X field
+   *   '0', 'o', 'O' : player O field
+   *   ' ': empty position
+   * Return values:
+   *   'E': not a valid board state
+   *   '-': neither player has won
+   *   'X': player X has won
+   *   'O': player O has won
+   */
+  public char checkTicTacToePosition(char[] a, char[] b, char[] c) {
+    if (a.length != 3 || b.length != 3 || c.length != 3) {
+      return 'E';
+    }
+    byte[] bytes = new byte[9];
+    for (int i = 0; i < 9; i++) {
+      bytes[i] = ticTacToeCharToByte(i < 3 ? a[i] : i < 6 ? b[i - 3] : c[i - 6]);
+    }
+    switch (checkTicTacToePosition(bytes)) {
+      case 0:
+        // Neither player has won yet
+        return '-';
+      case 1:
+        // Player X has won
+        return 'X';
+      case 2:
+        // Player O has won
+        return 'O';
+      default:
+        // Board is not in valid state
+        return 'E';
+    }
+  }
+
+  /**
+   * Convert char representaion of board state to byte representation.
+   */
+  static byte ticTacToeCharToByte(char c) {
+    switch (c) {
+      case 'X':
+      case 'x':
+        return 1;
+      case 'O':
+      case 'o':
+      case '0':
+        return 2;
+      case ' ':
+        return 0;
+      default:
+        throw new Error("Character " + c + " not recognized");
+    }
+  }
 }
